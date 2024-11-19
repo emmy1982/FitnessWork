@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white !important;
+}
+
+strong {
+    font-weight: bold;
+    color: red;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #232323 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* style.css */
+.hidden {
+    opacity: 0!important;
+    transform: translateY(100px)!important;
+    transition: opacity 10.5s ease-out, transform 10.5s ease-out!important;
+}
+
+.visible {
+    opacity: 1!important;
+    transform: translateY(0)!important;
+}
+
+video {
+    width: 100%;
+    height: 100vh;
+    /* 100% del viewport height */
+    object-fit: cover;
+
+}
+
+h1 {
+    font-size: 2.5rem !important;
+    text-align: center;
+    font-weight: 900 !important;
+}
+
+h2 {
+    font-size: 2.1rem !important;
+    font-weight: 600 !important;
+    color: white !important;
+}
+
+.separation {
+    width: 150px;
+    height: 2px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+
+}
+
+.separation-01 {
+    width: 110px !important;
+    height: 1px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+
+}
+
+.separationTop {
+    width: 140px !important;
+    height: 1px;
+    background: red;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 20px 0;
+
+}
+
+.h1-title {
+    min-width: 800px;
+    text-align: center;
+
+}
+
+i {
+    color: red;
+}
+
+.container-info {
+    max-width: 700px;
+    margin: 0 auto !important;
+}
+
+.icon-banner {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.icon-banner span a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: white;
+}
+
+.icon-banner span a:hover {
+    color: red;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: red;
+    padding: 15px 55px;
+    color: white;
+    border-radius: 5px !important;
+}
+
+button:hover {
+    background: #333;
+}
+
+/* .services {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px auto;
+   
+} */
+ .buttonUp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  
+   
+ }
+
+ .bi-arrow-up-circle-fill{
+    font-size: 2.5rem;
+    z-index: 1001!important;
+ }
+
+.iconService {
+    width: 100%;
+    margin: 30px auto!important;
+    height: auto;
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.iconService:hover {
+    
+    background: #333;
+    border-radius: 5px;
+}
+
+.iconService h5 {
+    margin-top: 15px;
+}
+.iconService p {
+    width: 50%;
+    margin-top: 10px;
+    text-align: center;
+}   
+
+.iconServ {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    background-color: red;
+    object-fit: cover;
+    border-radius: 5%;
+    margin-right: 10px;
+    filter: contrast(1.5);
+}
+.carousel-gym{
+    width: 100%;
+    height: 60vh !important;
+    object-fit: cover;
+}
+.color-btn{
+    color: red!important;
+    background-color: red;
+}
+
+.arrow-carrousel{
+    filter: drop-shadow(2px 2px 2px rgb(134, 134, 134));
+}
+
+.accordion-button{
+    color: red!important;
+}
+
+.accordion-item{
+border: none!important;
+}
+
+.simbol{
+    font-size: 2rem;
+    margin:0 10px;
+}
+
+.img-activity {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    filter: brightness(0.3); /* Ajusta el valor según tus necesidades */
+}
+
+.img-galery{
+    width: 100%;
+    height: 300px!important;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.img-galery:hover{
+    filter: brightness(0.5);
+    border: 5px solid transparent;
+}
+
+@media (max-width: 768px) {
+    video {
+        height: 100vh;
+        /* 50% del viewport height */
+    }
+
+    h1 {
+        font-size: 30px !important;
+    }
+
+    .h1-title {
+        min-width: 450px;
+    }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        
+    }
+
+    .service-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+   
+    .iconService p {
+        width: 100%;
+        margin-top: 10px;
+        text-align: none;
+    } 
+
+    .arrow-carrousel{
+        filter: drop-shadow(2px 2px 2px rgb(134, 134, 134));
+        width: 70px;
+    }
+
+
+}
